@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Tableau de bord</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <h2>Resto Admin</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item active">
+                    <span>📊 Tableau de bord</span>
+                </a>
+                <a href="menu.html" class="nav-item">
+                    <span>🍽️ Gestion du menu</span>
+                </a>
+                <a href="reservations.html" class="nav-item">
+                    <span>📅 Réservations</span>
+                </a>
+                <a href="../index.html" class="nav-item">
+                    <span>🏠 Retour au site</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <h1>Tableau de bord</h1>
+                <div class="admin-actions">
+                    <span>Administrateur</span>
+                    <button class="btn btn-outline">Déconnexion</button>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- Statistiques -->
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Réservations aujourd'hui</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>42</h3>
+                        <p>Couverts ce mois</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-info">
+                        <h3>2,840€</h3>
+                        <p>Chiffre du jour</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-info">
+                        <h3>4.8</h3>
+                        <p>Note moyenne</p>
+                    </div>
+                </div>
+
+                <!-- Réservations récentes -->
+                <div class="card recent-reservations">
+                    <h2>Réservations récentes</h2>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Date</th>
+                                    <th>Heure</th>
+                                    <th>Personnes</th>
+                                    <th>Statut</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Martin Dupont</td>
+                                    <td>15/12/2024</td>
+                                    <td>20:00</td>
+                                    <td>2</td>
+                                    <td><span class="status confirmed">Confirmée</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Sophie Leroy</td>
+                                    <td>15/12/2024</td>
+                                    <td>19:30</td>
+                                    <td>4</td>
+                                    <td><span class="status pending">En attente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Pierre Moreau</td>
+                                    <td>16/12/2024</td>
+                                    <td>13:00</td>
+                                    <td>6</td>
+                                    <td><span class="status confirmed">Confirmée</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Actions rapides -->
+                <div class="card quick-actions">
+                    <h2>Actions rapides</h2>
+                    <div class="actions-grid">
+                        <button class="action-btn">
+                            <span>➕</span>
+                            Nouveau plat
+                        </button>
+                        <button class="action-btn">
+                            <span>📅</span>
+                            Voir réservations
+                        </button>
+                        <button class="action-btn">
+                            <span>📊</span>
+                            Statistiques
+                        </button>
+                        <button class="action-btn">
+                            <span>⚙️</span>
+                            Paramètres
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

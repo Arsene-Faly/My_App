@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Resto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo">R</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="reservation.html" class="nav-link active nav-reservation">Réservation</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Connexion</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="reservation-hero">
+        <div class="container">
+            <h1>Réservez votre table</h1>
+            <p>Vivez une expérience gastronomique inoubliable</p>
+        </div>
+    </section>
+
+    <section class="reservation-section">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-info">
+                    <h2>Informations importantes</h2>
+                    <div class="info-card">
+                        <h3>Horaires d'ouverture</h3>
+                        <p>Lundi - Samedi: 12h-14h30 / 19h-22h30<br>Dimanche: 19h-22h30</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Tenue vestimentaire</h3>
+                        <p>Tenue correcte exigée. Chemise requise pour les hommes.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Annulation</h3>
+                        <p>Veuillez nous prévenir au moins 24h à l'avance pour toute annulation.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Réservations de groupe</h3>
+                        <p>Pour les groupes de plus de 8 personnes, merci de nous contacter directement.</p>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <h2>Formulaire de réservation</h2>
+                    <form id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reservation-date">Date</label>
+                                <input type="date" id="reservation-date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reservation-time">Heure</label>
+                                <select id="reservation-time" name="time" required>
+                                    <option value="">Choisir une heure</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Nombre de personnes</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="1">1 personne</option>
+                                    <option value="2">2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                    <option value="5">5 personnes</option>
+                                    <option value="6">6 personnes</option>
+                                    <option value="7">7 personnes</option>
+                                    <option value="8">8 personnes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="table-type">Type de table</label>
+                                <select id="table-type" name="table-type">
+                                    <option value="standard">Standard</option>
+                                    <option value="window">Fenêtre</option>
+                                    <option value="private">Coin privé</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="reservation-name">Nom complet</label>
+                            <input type="text" id="reservation-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reservation-email">Email</label>
+                            <input type="email" id="reservation-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reservation-phone">Téléphone</label>
+                            <input type="tel" id="reservation-phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="special-requests">Demandes spéciales</label>
+                            <textarea id="special-requests" name="special-requests" rows="3" placeholder="Allergies, anniversaire, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Réserver maintenant</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Resto</h3>
+                    <p>123 Avenue de la Gastronomie<br>75001 Paris, France</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lun - Sam: 12h-14h30 / 19h-22h30<br>Dimanche: 19h-22h30</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>+33 1 42 86 82 14<br>contact@resto.fr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Resto. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

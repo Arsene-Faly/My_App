@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Resto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo">R</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="reservation.html" class="nav-link nav-reservation">Réservation</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link active">Connexion</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="auth-hero">
+        <div class="container">
+            <h1>Connexion</h1>
+            <p>Accédez à votre compte</p>
+        </div>
+    </section>
+
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-form">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Mot de passe</label>
+                            <input type="password" id="login-password" name="password" required>
+                        </div>
+                        <div class="form-options">
+                            <label class="checkbox">
+                                <input type="checkbox" name="remember">
+                                <span>Se souvenir de moi</span>
+                            </label>
+                            <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Se connecter</button>
+                    </form>
+                    <div class="auth-switch">
+                        <p>Pas encore de compte ? <a href="register.html">S'inscrire</a></p>
+                    </div>
+                </div>
+                <div class="auth-info">
+                    <h2>Avantages du compte</h2>
+                    <ul>
+                        <li>Réservations rapides</li>
+                        <li>Historique des réservations</li>
+                        <li>Préférences sauvegardées</li>
+                        <li>Offres spéciales</li>
+                        <li>Gestion facile de votre profil</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Resto</h3>
+                    <p>123 Avenue de la Gastronomie<br>75001 Paris, France</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lun - Sam: 12h-14h30 / 19h-22h30<br>Dimanche: 19h-22h30</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>+33 1 42 86 82 14<br>contact@resto.fr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Resto. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

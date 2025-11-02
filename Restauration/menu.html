@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Resto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="logo">R</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="reservation.html" class="nav-link nav-reservation">Réservation</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Connexion</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="menu-hero">
+        <div class="container">
+            <h1>Notre Menu</h1>
+            <p>Découvrez notre carte gastronomique</p>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="entrees">Entrées</button>
+                <button class="category-btn" data-category="plats">Plats Principaux</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="vins">Carte des Vins</button>
+            </div>
+
+            <div class="menu-category active" id="entrees">
+                <h2>Entrées</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Foie Gras Maison</h3>
+                            <p>Foie gras de canard, chutney de figues, pain brioché toasté</p>
+                        </div>
+                        <span class="item-price">32€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Saint-Jacques</h3>
+                            <p>Noix de Saint-Jacques poêlées, purée de céleri, truffe noire</p>
+                        </div>
+                        <span class="item-price">28€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Salade Landaise</h3>
+                            <p>Salade frisée, gésiers confits, lardons, œuf poché</p>
+                        </div>
+                        <span class="item-price">24€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="plats">
+                <h2>Plats Principaux</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bœuf Wellington</h3>
+                            <p>Filet de bœuf, foie gras, duxelles de champignons, sauce au Porto</p>
+                        </div>
+                        <span class="item-price">48€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Bar de Ligne</h3>
+                            <p>Bar grillé, artichaut poivrade, citron confit, bouillon d'algues</p>
+                        </div>
+                        <span class="item-price">42€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Pigeon Rôti</h3>
+                            <p>Pigeon de Bresse, chou farci, jus réduit au vin rouge</p>
+                        </div>
+                        <span class="item-price">45€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="desserts">
+                <h2>Desserts</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Soufflé au Chocolat</h3>
+                            <p>Soufflé fondant au chocolat noir, glace vanille de Madagascar</p>
+                        </div>
+                        <span class="item-price">18€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Tarte Fine aux Pommes</h3>
+                            <p>Tarte fine caramélisée, sorbet pomme verte, crème fouettée</p>
+                        </div>
+                        <span class="item-price">16€</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" id="vins">
+                <h2>Carte des Vins</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Château Margaux 2015</h3>
+                            <p>Bordeaux Premier Grand Cru Classé</p>
+                        </div>
+                        <span class="item-price">280€</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-info">
+                            <h3>Domaine de la Romanée-Conti 2012</h3>
+                            <p>Bourgogne Grand Cru</p>
+                        </div>
+                        <span class="item-price">850€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Resto</h3>
+                    <p>123 Avenue de la Gastronomie<br>75001 Paris, France</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <p>Lun - Sam: 12h-14h30 / 19h-22h30<br>Dimanche: 19h-22h30</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>+33 1 42 86 82 14<br>contact@resto.fr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Resto. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
